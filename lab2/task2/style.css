@@ -29,8 +29,9 @@ body {
 
 .left-section {
     flex: 1;
-    padding-top: 20px;
+    padding: 30px;
     text-align: center;
+    font-size: 35px;
 }
 
 .right-section {
