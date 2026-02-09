@@ -1,0 +1,91 @@
+header{
+    width: 100%;
+    background-color: rgba(34, 34, 34);
+    height: 60px;
+    color: rgb(251, 246, 246);
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+body{
+    margin: 0;
+}
+.todo{
+    padding-left: 150px;
+}
+.mainh1{
+    margin-top: 90px;
+    margin-left: 300px;
+    font-weight: 350;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.add-bar{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 30px;
+}
+input{
+    width: 700px;     
+    padding: 8px 12px; 
+    font-size: 16px;
+    border-radius: 5px;
+    border-color: rgb(178, 178, 178);
+    border: 1px solid #ccc
+}
+.add{
+    font-size: 16px;
+    padding: 8px 12px;
+    width: 70px;
+    cursor: pointer;
+    background-color: rgb(51, 122, 183);
+    color: white;
+    border-color: rgb(47, 110, 165);
+    border-radius: 5px;
+    border: 1px solid #ccc
+}
+form{
+    border: 3xp solid transparent ;
+}
+img{
+    width: 10px;
+    height: 15px;
+}
+.done label {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+.taskbar {
+    display: flex;
+    align-items: center; 
+    gap: 15px;     
+    padding: 14px 18px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+}
+
+.taskbar label {
+    flex-grow: 1; 
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+}
+
+.taskbar input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+}
+
+.taskbar button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.task-list {
+    list-style: none;
+    padding: 0;
+    margin: 40px auto;
+    width: 900px; 
+}
