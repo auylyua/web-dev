@@ -5,12 +5,22 @@ document.addEventListener('DOMContentLoaded', () => {
     const taskList = document.querySelector('.task-list');
 
     addButton.addEventListener('click', () => {
+        addTask();
+    });
+
+    taskInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+            addTask();
+        }
+    });
+
+    function addTask() {
         const taskText = taskInput.value.trim();
         if (taskText === '') return;
 
         createTask(taskText);
         taskInput.value = '';
-    });
+    }
 
     function createTask(text) {
         const li = document.createElement('li');
@@ -31,7 +41,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         deleteButton.appendChild(img);
 
-
         task.appendChild(checkbox);
         task.appendChild(label);
         task.appendChild(deleteButton);
@@ -47,4 +56,3 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
-console.log('JS WORKS');
