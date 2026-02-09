@@ -89,3 +89,15 @@ img{
     margin: 40px auto;
     width: 900px; 
 }
+.taskbar input[type="checkbox"] {
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    accent-color: #9770ba; 
+    transition: transform 0.2s ease, accent-color 0.2s ease;
+}
+
+.taskbar input[type="checkbox"]:checked {
+    transform: scale(1.2); 
+    accent-color: #d19cff; 
+}
