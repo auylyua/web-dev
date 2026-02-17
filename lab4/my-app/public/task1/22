@@ -1,0 +1,14 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'comments',
+  template: `
+    <div>
+      <h3>Comments</h3>
+      <p>Great article!</p>
+      <p>Thanks for sharing!</p>
+    </div>
+  `,
+})
+export class CommentsComponent {
+}

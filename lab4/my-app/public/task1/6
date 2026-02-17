@@ -1,0 +1,15 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  template: `<div [contentEditable]="isEditable">Edit me!</div>`,
+  styles: `
+    div {
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+  `,
+})
+export class AppComponent {
+  isEditable = true;
+}

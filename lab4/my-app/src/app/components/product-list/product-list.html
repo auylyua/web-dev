@@ -1,0 +1,19 @@
+<div class="store-header">
+  <div class="header-inner">
+    <div class="logo">📱</div>
+    <h1 class="store-title">SmartPhone<span>Store</span></h1>
+    <p class="store-subtitle">Лучшие смартфоны — {{ products.length }} товаров</p>
+  </div>
+</div>
+
+<main class="products-section">
+  <div class="products-grid">
+    @for (product of products; track product.id) {
+      <app-product-card [product]="product" />
+    }
+  </div>
+</main>
+
+<footer class="store-footer">
+  <p>Все товары доступны на <a href="https://kaspi.kz" target="_blank">Kaspi.kz</a></p>
+</footer>
