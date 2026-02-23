@@ -1,0 +1,17 @@
+<main class="products-section">
+  @if (products.length === 0) {
+    <div class="empty-message">
+      <h2>📦 Нет товаров в этой категории</h2>
+      <p>Попробуйте выбрать другую категорию</p>
+    </div>
+  } @else {
+    <div class="products-grid">
+      @for (product of products; track product.id) {
+        <app-product-card 
+          [product]="product"
+          (deleteProduct)="onDeleteProduct($event)"
+        />
+      }
+    </div>
+  }
+</main>

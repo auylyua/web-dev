@@ -1,0 +1,15 @@
+<div style="padding:20px; text-align:center;">
+  @for (category of categories; track category.id) {
+    <button
+      (click)="selectCategory(category.id)"
+      style="margin:5px;">
+      {{ category.name }}
+    </button>
+  }
+</div>
+
+@if (selectedCategoryId) {
+  <app-product-list [products]="products" />
+} @else {
+  <h2 style="text-align:center;">Select a category</h2>
+}

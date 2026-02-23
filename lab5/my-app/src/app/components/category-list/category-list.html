@@ -1,0 +1,11 @@
+<div class="category-list">
+  @for (category of categories; track category.id) {
+    <button 
+      class="category-btn"
+      [class.active]="category.id === selectedCategoryId"
+      (click)="selectCategory(category.id)"
+    >
+      {{ category.name }}
+    </button>
+  }
+</div>
